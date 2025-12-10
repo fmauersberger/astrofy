@@ -11,29 +11,29 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
+    <!-- <div class="text-xl py-1">Hey there 👋</div> -->
+    <div class="text-5xl font-bold">Dr. Felix Mauersberger</div>
+    <div class="text-3xl py-3 font-bold">Decision Systems & AI Governance for Clear, Scalable Thinking. </div>
+    <div class="text-lg whitespace-pre-line">
+        I design rigorous governance and decision frameworks that bring structure to complex environments — grounded in economics, systems thinking, and practical implementation.
+
+I work with organizations that value clarity and analytical depth. My focus is on building AI governance systems, decision architectures, and strategy processes that scale — turning complexity into clear, actionable structures for long-term decisions.
+
+If you need rigorous methodologies rather than generic consulting, we should talk.
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://www.linkedin.com/in/felix-mauersberger" target="_blank"> Let's connect</a>
+      <a href="mailto:felix.mauersberger@ikmail.com" target="_blank" class="btn btn-outline ml-5">
+        Contact me
       </a>
     </div>
   </div>
 
-  <div>
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
-  </div>
+  </div> -->
 
-  <HorizontalCard
+  <!-- <HorizontalCard
     title="Demo Project 1"
     img="/post_img.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -54,11 +54,27 @@ const last_posts = posts.slice(0, 3);
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
     badge="FOSS"
-  />
+  /> -->
+
+ <!-- {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/projects/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  } -->
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
+  </div> 
 
   {
     last_posts.map((post) => (

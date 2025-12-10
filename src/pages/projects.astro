@@ -3,49 +3,62 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title = "Selected Work" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Past Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="AI Governance Framework for Enterprise Decisioning Systems"
+    img="/project_ai_governance.jpg"
+    desc={`		•	Designed a complete governance architecture for model-driven decision processes, replacing ad-hoc logic with structured oversight.
+	•	Established governance layers, risk controls, lifecycle documentation, and monitoring requirements aligned with industry standards.
+	•	Enabled transparent, traceable decisioning suitable for audit, certification, and long-term operational stability.`}
     url="#"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Decision Architecture for Pricing & Product Logic"
+    img="/project_pricing.jpg"
+    desc={`		•	Developed a reusable experimentation and decision-pattern framework for evaluating pricing logic in complex product environments.
+	•	Created structured process maps (BPMN) to reduce ambiguity and embed systematic reasoning into pricing workflows.
+	•	Supported consistent, defensible pricing decisions across teams through standardized decision architecture.`}
     url="#"
   />
 
-  <div>
+  <HorizontalCard
+    title="Forecasting & Analytical Framework Architecture"
+    img="/project_forecasting.jpg"
+    desc={`		•	Re-engineered forecasting and pricing models with an emphasis on stability, reproducibility, and interpretable logic.
+	•	Introduced structured evaluation and integration protocols for controlled deployment in engineering workflows.
+	•	Delivered modular modeling components that integrate cleanly into enterprise data pipelines, reducing operational risk.`}
+    url="#"
+    
+  />
+
+   <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Transparent Modeling Logic for Economic Simulations"
+    img="/project_economics.jpg"
+    desc={`		•	Built reproducible modeling systems for computational simulations, emphasizing transparent logic, validation, and robustness.
+	•	Designed structured experiment documentation and stability checks for long-horizon, high-uncertainty modelling.
+	•	Provided a durable model architecture suitable for integration into broader decision-support systems.`}
+    url="#"
+  />
+
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  
+ 
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Demo Project 5"
     img="/post_img.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
-  />
+    badge="FOSS"
+  /> -->
 </BaseLayout>

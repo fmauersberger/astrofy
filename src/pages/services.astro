@@ -3,38 +3,61 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title="Projects" sideBarActiveItemID="services">
+<BaseLayout title="Areas of Expertise" sideBarActiveItemID="services">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Services Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Areas of Expertise</div>
   </div>
 
   <HorizontalCard
-    title="Service 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    badge="NEW"
+    title="AI Governance & Assurance"
+    img="/ai_governance_layer.jpg"
+    desc={`Designing practical governance systems for AI and ML products, including:
+	•	governance architecture and decision rights
+	•	documentation and transparency processes
+	•	risk assessment frameworks
+	•	scalable model oversight structures
+	•	process design for compliance without bureaucracy
+
+Approach: neutral, technical, and grounded in economic reasoning.`}
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Service 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Decision Systems & Decision Architecture"
+    img="/decision_systems.jpg"
+    desc={`Helping organizations build clear structures for high-stakes decisions:
+	•	decision maps and logic frameworks
+	•	structured thinking methodologies
+	•	escalation, review, and feedback loops
+	•	process clarity for ambiguous or complex environments
+	•	integrating human judgment with analytical tools
+
+Outcome: durable decision processes that scale beyond individuals.`}
     url="#"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Service 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Pricing & Strategy Frameworks"
+    img="/pricing_strategy.jpg"
+    desc={`Focused on framework design, not operational pricing analytics or:
+	•	pricing architecture and logic
+	•	value-based pricing processes
+	•	analytical strategy frameworks
+	•	scenario design & structured evaluation methods
+
+Designed for organizations that want repeatable logic, not one-off pricing recommendations.`}
     url="#"
-    badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Service 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Forecasting & Economic Modelling"
+    img="/economic_modeling.jpg"
+    desc={`Credibility-enhancing and complementary:
+	•	model design & validation logic
+	•	forecasting frameworks
+	•	policy or market analysis structures
+
+Useful for clients needing analytical rigor embedded into governance or strategy work.`}
     url="#"
   />
 </BaseLayout>
