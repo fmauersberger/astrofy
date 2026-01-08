@@ -1,7 +1,7 @@
 ---
 title: "Why Some Systems Spiral — and Others Stabilise"
 description: "On feedback loops, runaway momentum, and the quiet difference between systems that fracture and those that adapt."
-pubDate: "Jan 8 2025"
+pubDate: "Jan 8 2026"
 heroImage: "/half_star.jpg"
 tags: ["systems thinking", "feedback loops", "governance", "design"]
 ---
